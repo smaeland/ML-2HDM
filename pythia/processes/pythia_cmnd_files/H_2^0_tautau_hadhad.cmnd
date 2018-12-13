@@ -1,0 +1,18 @@
+! H^{0} (H_2^0) \rightarrow \tau\tau \mathrm{(scalar)}
+!
+!                   /  tau-
+!                 /
+!   H^0  --------
+!                 \
+!                   \  tau+
+!
+!
+Beams:eCM = 13000.
+Higgs:useBSM = on
+HiggsBSM:allH2 = on
+
+35:all = H0 H0 1 0 0 450.0 7.98759244e+00 50.00000 0.00000
+35:onMode = off
+35:onIfMatch = 15 -15       ! H^0 -> tau- tau+
+15:onMode = off
+15:onIfMatch = 16 111 211   ! tau -> pi± pi0

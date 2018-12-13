@@ -1,0 +1,57 @@
+# Plot style for paper ML bias 2HDM bla bla - Inga S. 
+
+figure.figsize       : 10.0, 8.0    # figure size in inches
+font.size            : 22.0
+
+
+# Colour scheme
+#c0 = 'black'
+#c1 = '#20A387' # green
+#c2 = '#FDE725' # yellow
+#c3 = '#440154' # purple
+#c4 = '#39568C' # blue
+axes.prop_cycle: cycler('color', ['black','20A387','FDE725','440154','39568C'])
+
+# Whoever can make the stuff below here work, pls call me. 
+#viridis_colors = [mplstyle.get_cmap('viridis')(1. * i/n) for i in range(n)]
+#axes.prop_cycle: cycler('color', viridis_colors)
+
+# --- Axes
+#axes.titlesize      : x-large   # fontsize of the axes title
+#axes.labelsize      : x-large   # fontsize of the x and y labels
+axes.titlesize      : large   # fontsize of the axes title
+axes.labelsize      : large   # fontsize of the x and y labels
+
+# -- Ticks 
+xtick.direction      : in
+ytick.direction      : in
+xtick.top            : True   # draw ticks on the top side
+xtick.bottom         : True   # draw ticks on the bottom side
+ytick.left           : True   # draw ticks on the left side
+ytick.right          : True   # draw ticks on the right side
+
+#xtick.labelsize      : medium  # fontsize of the tick labels
+#ytick.labelsize      : medium  # fontsize of the tick labels
+xtick.labelsize      : large  # fontsize of the tick labels
+ytick.labelsize      : large  # fontsize of the tick labels
+
+xtick.major.pad      : 3.5   # distance between axis and tick label
+ytick.major.pad      : 3.5
+
+# -- Legend
+legend.loc           : best #lower center 
+legend.fontsize      : medium #large
+legend.markerscale   : 1.0 #3.0    # the relative size of legend markers vs. original
+#legend.fancybox      : True  # if True: rounded box 
+legend.frameon       : False   # whether or not to draw a frame around legend
+
+#--- Grids
+grid.color            : k       # grid color
+grid.linestyle        : :       # dotted
+grid.linewidth        : 0.5     # in points
+grid.alpha            : 1.0     # transparency, between 0.0 and 1.0
+
+
+# -- Lines
+lines.linewidth        : 3.0     # line width in points
+patch.linewidth        : 2.0     # edge width in points

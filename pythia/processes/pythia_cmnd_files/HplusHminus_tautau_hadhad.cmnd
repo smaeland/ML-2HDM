@@ -1,0 +1,19 @@
+! H^{+}H^{-} \rightarrow \tau^{+}\tau^{-}\nu\nu
+!                    / nu
+!   q            .. /
+!      \     H ..   \
+!        \   ..      \ tau
+!          \
+!          / ..
+!        /     ..    / nu
+!   _  /     H   .. /
+!   q               \
+!                    \ tau
+!
+Beams:eCM = 6500.
+Higgs:useBSM = on
+HiggsBSM:ffbar2H+H- = on
+37:onMode = off
+37:onIfMatch = 15 16        ! H -> tau nu
+15:onMode = off
+15:onIfMatch = 16 111 211   ! tau -> pi+ pi0

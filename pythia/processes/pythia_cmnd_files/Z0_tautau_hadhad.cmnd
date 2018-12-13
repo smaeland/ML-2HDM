@@ -1,0 +1,23 @@
+! Z^{0}/\gamma^{*}  \rightarrow \tau \tau
+!
+!                         /  tau-
+!                       /
+!   Z^0/gamma*  -------
+!                       \
+!                         \  tau+
+!
+!
+Beams:eCM = 13000.
+WeakSingleBoson:ffbar2gmZ = on
+!WeakBosonAndParton:qqbar2gmZg = on
+!WeakBosonAndParton:qg2gmZq = on
+!WeakBosonAndParton:ffbar2gmZgm = on
+WeakZ0:gmZmode = 2          ! only pure Z^0 contribution
+
+23:onMode = off
+23:onIfMatch = 15 -15       ! Z -> tau- tau+
+15:onMode = off
+15:onIfMatch = 16 111 211   ! tau -> pi± pi0
+
+
+PartonLevel:MPI = off

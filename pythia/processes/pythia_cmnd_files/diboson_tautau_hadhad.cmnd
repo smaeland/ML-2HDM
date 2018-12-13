@@ -1,0 +1,15 @@
+! pp \rightarrow ZZ/ZW/WW \rightarrow \tau \tau
+
+
+Beams:eCM = 13000.
+PhaseSpace:pTHatMin = 40.
+
+WeakDoubleBoson:all = on
+23:onMode = off
+23:onIfMatch = 15 -15       ! Z -> tau- tau+
+24:onMode = off
+24:onIfMatch = -15 16       ! W -> tau nu
+15:onMode = off
+15:onIfMatch = 16 111 211   ! tau -> pi± pi0
+
+Next:numberShowEvent = 0

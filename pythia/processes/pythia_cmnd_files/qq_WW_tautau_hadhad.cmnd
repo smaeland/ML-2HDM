@@ -1,0 +1,20 @@
+! q\bar{q} \rightarrow WW \rightarrow \tau^{+}\tau^{-}\nu\nu
+!
+!                   / nu
+!   q             /
+!      \     W  ~ \
+!        \    ~    \ tau
+!          \
+!          / ~
+!        /     ~    / nu
+!   _  /     W   ~ /
+!   q              \
+!                   \ tau
+!
+Beams:eCM = 6500.
+WeakDoubleBoson:all = off
+WeakDoubleBoson:ffbar2WW = on
+24:onMode = off
+24:onIfMatch = 15 16        ! W -> tau nu
+15:onMode = off
+15:onIfMatch = 16 111 211   ! tau -> pi+ pi0

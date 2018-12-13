@@ -1,0 +1,11 @@
+calculate_point:
+	g++ calculate_point.cpp \
+	-I/Users/steffen/software/2HDMC-1.7.0/src \
+	-I/Users/steffen/software/gsl-2.3-build/include \
+	-L/Users/steffen/software/2HDMC-1.7.0/lib \
+	-L/Users/steffen/software/HiggsBounds-4.3.1 \
+	-L/Users/steffen/software/HiggsSignals-1.4.0 \
+	-l2HDMC -lgsl -lgslcblas -lm -L/Users/steffen/software/gsl-2.3-build/lib \
+	-DHiggsBounds -lHB -lHS -lgfortran \
+	-Wno-gnu-static-float-init \
+	-o calculate_point

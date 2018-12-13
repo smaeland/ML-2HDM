@@ -1,0 +1,22 @@
+! A^{0} (H_3^0) \rightarrow WW^{*} \rightarrow \tau^{+}\tau^{-}\nu\nu \mathrm{(scalar)}
+!
+!                   / nu
+!                 /
+!           W   ~ \
+!    A^0      ~    \ tau
+!   ----------
+!             ~    / nu
+!           W   ~ /
+!                 \
+!                  \ tau
+!
+Beams:eCM = 6500.
+Higgs:useBSM = on
+HiggsBSM:allA3 = on
+36:onMode = off
+!36:onIfMatch = 24 -24       ! A^0 -> W+W-
+!24:onMode = off
+!24:onIfMatch = 15 16        ! W -> tau nu
+36:onIfMatch = 15 -15       ! A^0 -> tau- tau+
+15:onMode = off
+15:onIfMatch = 16 111 211   ! tau -> pi+ pi0

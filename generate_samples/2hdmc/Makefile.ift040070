@@ -1,0 +1,11 @@
+
+calculate_point:
+	g++ calculate_point.cpp \
+	-I/scratch3/MLproject/2HDMC-1.7.0/src \
+	-L/scratch3/MLproject/2HDMC-1.7.0/lib \
+	-L/scratch3/MLproject/HiggsBounds-4.3.1 \
+	-L/scratch3/MLproject/HiggsSignals-1.4.0 \
+	-l2HDMC -lgsl -lgslcblas -lm  \
+	-DHiggsBounds -lHB -lHS -lgfortran \
+	-Wno-gnu-static-float-init \
+	-o calculate_point

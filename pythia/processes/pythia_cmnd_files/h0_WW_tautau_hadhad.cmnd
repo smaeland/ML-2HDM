@@ -1,0 +1,21 @@
+! h^{0} \rightarrow WW^{*} \rightarrow \tau^{+}\tau^{-}\nu\nu \mathrm{(scalar)}
+!
+!                   / nu
+!                 /
+!           W   ~ \
+!    h^0      ~    \ tau
+!   ----------
+!             ~    / nu
+!           W*  ~ /
+!                 \
+!                  \ tau
+!
+Beams:eCM = 6500.
+HiggsSM:all = on
+25:onMode = off
+25:onIfMatch = 24 -24       ! h -> W+W-
+24:onMode = off
+24:onIfMatch = 15 16        ! W -> tau nu
+15:onMode = off
+15:onIfMatch = 16 111 211   ! tau -> pi+ pi0
+HiggsH1:parity = 1          ! scalar
